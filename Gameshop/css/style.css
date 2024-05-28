@@ -9,7 +9,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: s GmarketSansMedium;
+  font-family: GmarketSansMedium;
+}
+a {
+  text-decoration: none;
 }
 .container {
   /* PC는 좌우 여백이 없으면 어색하기 때문에
@@ -22,7 +25,6 @@
     height: 100vh; 삭제 */
 
   margin: 0 auto;
-  border: 1px solid black;
 }
 .title {
   width: 100%;
@@ -41,7 +43,7 @@
   /* height: 50px; */
   background-color: dodgerblue;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 .content {
@@ -59,28 +61,52 @@
   padding: 20px;
 }
 .menu > div {
-  width: 120px;
+  width: 100%;
+  padding: 0 20px;
   height: 50px;
   text-align: center;
-  line-height: 45px;
-  color: white;
+  line-height: 50px;
   font-weight: 700;
   font-size: 1.3rem;
 }
+.menu > div > a {
+  color: white;
+  transition: all 0.5s ease;
+}
 .menu > div:hover {
-  color: dodgerblue;
   background-color: white;
   cursor: pointer;
+
+  a {
+    color: dodgerblue;
+  }
 }
 .game {
   border-radius: 5px;
   background-color: white;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 2);
   padding-bottom: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease;
+}
+.game:hover {
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.4);
+  scale: 1.02;
 }
 .image {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .content p {
   margin: 0 0 5px 10px;
+}
+
+.product {
+  width: 100%;
+  background-color: khaki;
+  padding: 20px;
+}
+
+.product p {
+  margin: 10px 20px;
 }
