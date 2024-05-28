@@ -110,3 +110,57 @@ a {
 .product p {
   margin: 10px 20px;
 }
+.login {
+  height: 300px;
+  /* background-color: khaki; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-box {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #fff;
+  font-size: 1.3rem;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 60px;
+  border: 1px solid #ccc;
+}
+.login-input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-input > input {
+  margin: 0px 10px;
+  height: 36px;
+}
+
+.loginBtn {
+  border: 1px solid dodgerblue;
+  width: 200px;
+  color: dodgerblue;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+
+.loginBtn:hover {
+  background-color: dodgerblue;
+  color: #fff;
+}
+/* grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr; */
