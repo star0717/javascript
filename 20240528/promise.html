@@ -16,7 +16,21 @@
         } else {
           reject("failed:(");
         }
+        return "리턴 구문은 처리 될까요?";
       });
+      // promise 객체 사용
+      promise
+        .then((response) => {
+          console.log(response);
+          return "성공 리턴";
+        })
+        .then((response) => {
+          console.log(response);
+          // then 구문에서 리턴한 데이터는 다음 then 구문의 매개변수로 전달됨
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     </script>
   </body>
 </html>
